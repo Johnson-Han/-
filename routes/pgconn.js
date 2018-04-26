@@ -4,7 +4,7 @@ var config = {
   user: 'blog_user', //env var: PGUSER
   database: 'haixia_web', //env var: PGDATABASE
   password: '$blog_user', //env var: PGPASSWORD
-  host: '47.100.41.42', // Server hosting the postgres database
+  host: 'localhost', // Server hosting the postgres database
   port: 5432, //env var: PGPORT
   max: 10, // max number of clients in the pool
   idleTimeoutMillis: 30000, // how long a client is allowed to remain idle before being closed
