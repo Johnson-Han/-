@@ -12,10 +12,7 @@ var multer = require('multer');
 var upload =multer({dest: './public/image/uploads'});
 var flash = require('connect-flash');
 var index = require('./routes/index');
-var system_structure = require('./routes/system_structure');
 var comment = require('./routes/comment');
-var control_system = require('./routes/control_system');
-var manual = require('./routes/manual');
 var cors =require('cors');
 
 
@@ -66,10 +63,7 @@ app.use(function(req,res,next){
   next();
 })
 app.use('/', index);
-app.use('/system_structure', system_structure);
 app.use('/comment', comment);
-app.use('/control_system', control_system);
-app.use('/epics_manual', manual);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
