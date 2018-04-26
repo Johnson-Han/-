@@ -1,0 +1,17 @@
+{
+  "name": "rms-web",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/Johnson-Han/haixia_flower",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-filter": "^0.5.17"
+  }
+}

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<!-- BEGIN HEAD -->
+
+<head>
+
+	<meta charset="utf-8" />
+
+	<title>海霞 | 鲜花店 - 开新团</title>
+
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+	<meta content="" name="description" />
+
+	<meta content="" name="author" />
+
+	<!-- BEGIN GLOBAL MANDATORY STYLES -->
+
+	<link href="../media/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="../media/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="../media/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+	<link href="../media/css/style-metro.css" rel="stylesheet" type="text/css"/>
+
+	<link href="../media/css/style.css" rel="stylesheet" type="text/css"/>
+
+	<link href="../media/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+
+	<link href="../media/css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+
+	<link href="../media/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+
+	<!-- END GLOBAL MANDATORY STYLES -->
+
+	<link rel="shortcut icon" href="../media/image/favicon.ico" />
+
+	<!-- <script src="../ckeditor/ckeditor.js"></script> -->
+	<script src="../kindeditor/kindeditor-all.js"></script> 
+	<script src="../kindeditor/lang/zh-CN.js"></script> 
+
+	<script>
+		  var options = {
+     //    height:"600px",   //规定高度
+     //    width:"550px",    //规定宽度
+        uploadJson: '/comment/uploadImg',   //规定服务端处理的路由地址
+        allowImageUpload : true,     //是否允许本地上传图片
+    //     items : [
+    //         'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic',
+    //         'underline', 'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright',    'insertorderedlist', 'insertunorderedlist', '|', 'emoticons', 'image', 'link'],       //各种可显示的图标
+    //  //    resizeType:0                 //是否可以拖动
+    };
+		KindEditor.ready(function(K) {
+			   window.editor = K.create('#editor_id',options);
+		});
+ 	 </script>
+
+	<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script> 
+<!-- 
+<script>
+		var serverIP="210.72.8.90";
+		var socket = io.connect(serverIP+':80');
+		var pvs={ai:[{pvname:"hanlfHost:ai1"},{pvname:"hanlfHost:ai2"},{pvname:"hanlfHost:ai3"}],
+         ao:[{pvname:"hanlfHost:ao1"}, {pvname:"hanlfHost:ao2"}, {pvname:"hanlfHost:ao3"}]
+        }
+		// console.log(pvs.ai);
+       async.map(pvs.ai,function(item,callback){
+          console.log(item.pvname);
+          socket.on(item.pvname, function (data) {
+            if(document.getElementById(item.pvname)){
+             document.getElementById(item.pvname).innerHTML=data;
+            }
+               });
+               
+       }, function(err,results){
+         callback(err,results); 
+         console.log(results);
+       });
+
+</script> -->
+
+
+</head>
+
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
+
+<body class="page-header-fixed" >
+
+	<!-- BEGIN HEADER -->
+
+	<div class="header navbar navbar-custom navbar-fixed-top">
+
+		<!-- BEGIN TOP NAVIGATION BAR -->
+
+		<div class="navbar-inner">
+
+			<div class="container-fluid">
+
+				<!-- BEGIN LOGO -->
+
+				<a class="brand" href="/">
+
+				<img src="/media/image/logo.png" alt="logo" />
+
+				</a>
+
+				<!-- END LOGO -->
+
+				<!-- BEGIN HORIZANTAL MENU -->
+
+			
+
+				<!-- END HORIZANTAL MENU -->
+
+				<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+
+				<a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+
+				<img src="/media/image/menu-toggler.png" alt="" />
+
+				</a>          
+
+				<!-- END RESPONSIVE MENU TOGGLER -->            
+
+				<!-- BEGIN TOP NAVIGATION MENU -->              
+
+				<ul class="nav pull-right">
+
+					
+
+				
+
+					<!-- BEGIN USER LOGIN DROPDOWN -->
+
+					<li class="dropdown user">
+
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+
+						<img alt="" src="/media/image/avatar1_small.jpg" />
+
+						<span class="username">徐 海霞</span>
+
+						<i class="icon-angle-down"></i>
+
+						</a>
+
+						<ul class="dropdown-menu">
+							<li><a href="#"><i class="icon-comment"></i>订单记录</a></li>
+
+
+						</ul>
+
+					</li>
+
+					<!-- END USER LOGIN DROPDOWN -->
+
+				</ul>
+
+				<!-- END TOP NAVIGATION MENU --> 
+
+			</div>
+
+		</div>
+
+		<!-- END TOP NAVIGATION BAR -->
+
+	</div>
+
+	<!-- END HEADER -->
+
+	<!-- BEGIN CONTAINER -->   
+
+	<div class="page-container row-fluid" >
+
+		<!-- BEGIN HORIZONTAL MENU PAGE SIDEBAR1 -->
+
+		<div class="page-sidebar nav-collapse collapse">
+
+			<ul class="page-sidebar-menu hidden-phone hidden-tablet">
+
+				<li >
+				
+					<a href="#">
+					
+						<i class="icon-comment"></i>
+					
+						<span class="title">开新团：</span>
+						<span>写明此次出售鲜花种类和截止日期！</span>
+
+					</a>
+				
+				</li>
+			</ul>
+
+			<!--HORIZONTAL AND SIDEBAR MENU FOR MOBILE & TABLETS-->
+
+
+
+		</div>
+
+		<!-- END BEGIN HORIZONTAL MENU PAGE SIDEBAR -->
+
+		<!-- BEGIN PAGE -->
+
+		<div class="page-content">
+		
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+		
+
+		
+			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+		
+			<!-- BEGIN PAGE CONTAINER-->
+		
+			<div class="container-fluid">
+		
+				<!-- BEGIN PAGE HEADER-->
+		
+				<div class="row-fluid">
+		
+					<div class="span12">
+		
+						<!-- BEGIN STYLE CUSTOMIZER -->
+		
+
+		
+						<!-- END BEGIN STYLE CUSTOMIZER -->
+		
+						<!-- BEGIN PAGE TITLE & BREADCRUMB-->
+		
+						<h3 class="page-title">
+		
+							开新团
+							<small>管理员操作</small>
+		
+						</h3>
+		
+
+		
+						<!-- END PAGE TITLE & BREADCRUMB-->
+		
+					</div>
+		
+				</div>
+		
+				<!-- END PAGE HEADER-->
+		
+				<!-- BEGIN PAGE CONTENT-->
+		
+				<div class="row-fluid">
+		
+					<div class="span12 news-page blog-page">
+		
+						<div class="row-fluid">
+							<div class="span8 blog-tag-data">
+								<h3>鲜花团内容:</h3>
+
+								<form method="post" action="/comment/add"  class="horizontal-form" >
+									<label>标题:</label>
+									<input type="text" class="control-group form-control" name="title" id="title" required="required" data-validation-required-message="标题" ></input>
+
+										<!-- <div class="form-group">
+											<div class="controls">
+												<label>标题:</label>
+												<input type="text" class="control-group form-control" name="title" id="title" required="required" data-validation-required-message="标题" ></input>
+												<p class="help-block"></p>
+											</div>
+										</div> -->
+										<div class="form-group" style="display: none">
+											<div class="controls">
+												<label>作者:</label>
+												<input type="text" class="control-group form-control" name="category" id="category" value='new'></input>
+											</div>
+										</div>
+										<div class="form-group" style="display: none">
+											<div class="controls">
+												<label>作者:</label>
+												<input type="text" class="control-group form-control" name="author" id="author" value='海霞'></input>
+											</div>
+										</div>
+
+										<div class=" form-group">
+											<div class="controls">
+												<label>内容:</label>
+												<!-- <textarea  class="ckeditor control-group form-control" name="body" id="body" required data-validation-required-message="评论内容"
+												maxlength="999"  style="width: 800px"></textarea> -->
+												<textarea id="editor_id" name="content" style="width:700px;height:300px;" required data-validation-required-message="请输入内容">
+												</textarea>
+											</div>
+										</div>
+
+										<!-- <div class="form-group">
+												<label>添加图片:</label>
+												<input type="file" class="control-group form-control" name="mainimage" id="mainimage" required data-validation-required-message="作者姓名" ></input>
+										</div> -->
+
+										<div id="success">
+										<!-- For success/fail messages -->
+										<button  type="submit" class="btn btn-lg btn-info" name="submit"  style="margin-top:10px;background-color:#006dcc">提交信息</button>
+
+										</div>	
+								</form>
+							</div>
+						</div>
+
+		
+		
+		
+					</div>
+		
+				<!-- END PAGE CONTENT-->
+		
+				</div>
+	
+			<!-- END PAGE CONTAINER-->
+		
+				</div>
+
+		<!-- END PAGE -->    
+
+			</div>
+		</div>
+	</div>
+	<!-- END CONTAINER -->
+			
+		
+	<!-- BEGIN FOOTER -->
+
+	<div class="footer">
+
+		<div class="footer-inner">
+
+			2017 &copy; TMSR 钍基熔盐堆核能系统.
+
+		</div>
+
+		<div class="footer-tools">
+
+			<span class="go-top">
+
+			<i class="icon-angle-up"></i>
+
+			</span>
+
+		</div>
+
+	</div>
+
+	<!-- END FOOTER -->
+
+	<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+
+	<!-- BEGIN CORE PLUGINS -->
+
+	<script src="../media/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+
+	<!-- <script src="../media/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script> -->
+
+	<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+
+	<!-- <script src="../media/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>       -->
+
+	<script src="../media/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<!--[if lt IE 9]>
+
+	<script src="../media/js/excanvas.min.js"></script>
+
+	<script src="../media/js/respond.min.js"></script>  
+
+	<![endif]-->   
+
+	<!-- <script src="../media/js/jquery.slimscroll.min.js" type="text/javascript"></script>
+
+	<script src="../media/js/jquery.blockui.min.js" type="text/javascript"></script>  
+
+	<script src="../media/js/jquery.cookie.min.js" type="text/javascript"></script>
+
+	<script src="../media/js/jquery.uniform.min.js" type="text/javascript" ></script> -->
+
+	<!-- END CORE PLUGINS -->
+
+	<script src="../media/js/app.js"></script>      
+	<script>
+			function jump(){
+				window.open("/comment/add",'','',true)
+			}
+	</script>
+	<script>
+
+		jQuery(document).ready(function() {    
+
+		   App.init();
+
+		});
+
+	</script> 
+
+	<!-- END JAVASCRIPTS -->
+
+<!-- <script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-37564768-1']);  _gaq.push(['_setDomainName', 'keenthemes.com']);  _gaq.push(['_setAllowLinker', true]);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+
+
+</body>
+
+<!-- END BODY -->
+
+</html>
