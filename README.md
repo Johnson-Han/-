@@ -10,24 +10,5 @@ Web应用程序具有跨平台、跨系统的特点，任何拥有浏览器的�
 
 ## 日志：
 ```bask
-2107-12-18
-    mac 下安装node-epics 包以来的ffi和ref 包需要mac 安装xcode。
-    cenots6.3 下安装node-epics 需要升级系统
-    编译ffi 出错，node版本 降低至7.4.0
-
-2017-12-19
-    客户端的批量处理 引入async异步处理包。
-    引入metronic-bootstrap框架，更新public
-    更新index界面
-    页面调转的初步设计
-```
-
-2017-12-20
-    前端包管理软件bower
-    编辑系统结构页，system_struct.html
-    
-2017/12/22
-    申请百度云地址，47.100.41.42  修改安全组规则，开发80端口
-    修改logo
-    
-
+2108-4-24 
+    海霞订单web第一次上线
